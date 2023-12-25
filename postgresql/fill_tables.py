@@ -19,24 +19,24 @@ try:
     with connection.cursor() as cursor:
         cursor.execute(
             f"""INSERT INTO office_cash_currency (name, usdbuy, usdsell) VALUES
-            ('VTB', '{vtb_office_cash_usd_buy}', '{vtb_office_cash_usd_sell}');"""
+            ('ВТБ', '{vtb_office_cash_usd_buy}', '{vtb_office_cash_usd_sell}');"""
             f"""INSERT INTO office_cash_currency (name, usdbuy, usdsell) VALUES
-            ('ALFA', '{alfa_office_usd_buy}', '{alfa_office_usd_sell}');"""
+            ('Альфа-банк', '{alfa_office_usd_buy}', '{alfa_office_usd_sell}');"""
             f"""INSERT INTO office_cash_currency (name, usdbuy, usdsell) VALUES
-            ('SOVCOM', '{sovcom_office_cash_usd_buy}', '{sovcom_office_cash_usd_sell}');"""
+            ('Совкомбанк', '{sovcom_office_cash_usd_buy}', '{sovcom_office_cash_usd_sell}');"""
             f"""INSERT INTO office_cash_currency (name, usdbuy, usdsell) VALUES
-            ('GAZPROM', '{gazprom_office_cash_usd_buy}', '{gazprom_office_cash_usd_sell}');"""
+            ('Газпромбанк', '{gazprom_office_cash_usd_buy}', '{gazprom_office_cash_usd_sell}');"""
         )
     with connection.cursor() as cursor:
         cursor.execute(
             f"""INSERT INTO office_noncash_currency (name, usdbuy, usdsell) VALUES
-                ('VTB', '{vtb_office_noncash_usd_buy}', '{vtb_office_noncash_usd_sell}');"""
+                ('ВТБ', '{vtb_office_noncash_usd_buy}', '{vtb_office_noncash_usd_sell}');"""
             f"""INSERT INTO office_noncash_currency (name, usdbuy, usdsell) VALUES
-                ('ALFA', '{alfa_office_usd_buy}', '{alfa_office_usd_sell}');"""
+                ('Альфа-банк', '{alfa_office_usd_buy}', '{alfa_office_usd_sell}');"""
             f"""INSERT INTO office_noncash_currency (name, usdbuy, usdsell) VALUES
-                ('SOVCOM', '{sovcom_office_noncash_usd_buy}', '{sovcom_office_noncash_usd_sell}');"""
+                ('Совкомбанк', '{sovcom_office_noncash_usd_buy}', '{sovcom_office_noncash_usd_sell}');"""
             f"""INSERT INTO office_noncash_currency (name, usdbuy, usdsell) VALUES
-                ('GAZPROM', '{gazprom_office_noncash_usd_buy}', '{gazprom_office_noncash_usd_sell}');"""
+                ('Газпромбанк', '{gazprom_office_noncash_usd_buy}', '{gazprom_office_noncash_usd_sell}');"""
             )
         print("[INFO] Data was succefully inserted")
 
