@@ -18,25 +18,25 @@ try:
     # Update data into a table
     with connection.cursor() as cursor:
         cursor.execute(
-            F"""UPDATE office_cash_currency SET usdbuy = {vtb_office_cash_usd_buy} WHERE name = 'VTB';"""
-            F"""UPDATE office_cash_currency SET usdsell = {vtb_office_cash_usd_sell} WHERE name = 'VTB';"""
-            F"""UPDATE office_cash_currency SET usdbuy = {alfa_office_usd_buy} WHERE name = 'ALFA';"""
-            F"""UPDATE office_cash_currency SET usdsell = {alfa_office_usd_sell} WHERE name = 'ALFA';"""
-            F"""UPDATE office_cash_currency SET usdbuy = {sovcom_office_cash_usd_buy} WHERE name = 'SOVCOM';"""
-            F"""UPDATE office_cash_currency SET usdsell = {sovcom_office_cash_usd_sell} WHERE name = 'SOVCOM';"""
-            F"""UPDATE office_cash_currency SET usdbuy = {gazprom_office_cash_usd_buy} WHERE name = 'GAZPROM';"""
-            F"""UPDATE office_cash_currency SET usdsell = {gazprom_office_cash_usd_sell} WHERE name = 'GAZPROM';"""
+            F"""UPDATE office_cash_currency SET usdbuy = {vtb_office_cash_usd_buy} WHERE name = 'ВТБ';"""
+            F"""UPDATE office_cash_currency SET usdsell = {vtb_office_cash_usd_sell} WHERE name = 'ВТБ';"""
+            F"""UPDATE office_cash_currency SET usdbuy = {alfa_office_usd_buy} WHERE name = 'Альфа-банк';"""
+            F"""UPDATE office_cash_currency SET usdsell = {alfa_office_usd_sell} WHERE name = 'Альфа-банк';"""
+            F"""UPDATE office_cash_currency SET usdbuy = {sovcom_office_cash_usd_buy} WHERE name = 'Совкомбанк';"""
+            F"""UPDATE office_cash_currency SET usdsell = {sovcom_office_cash_usd_sell} WHERE name = 'Совкомбанк';"""
+            F"""UPDATE office_cash_currency SET usdbuy = {gazprom_office_cash_usd_buy} WHERE name = 'Газпромбанк';"""
+            F"""UPDATE office_cash_currency SET usdsell = {gazprom_office_cash_usd_sell} WHERE name = 'Газпромбанк';"""
         )
     with connection.cursor() as cursor:
         cursor.execute(
-            F"""UPDATE office_noncash_currency SET usdbuy = {vtb_office_noncash_usd_buy} WHERE name = 'VTB';"""
-            F"""UPDATE office_noncash_currency SET usdsell = {vtb_office_noncash_usd_sell} WHERE name = 'VTB';"""
-            F"""UPDATE office_noncash_currency SET usdbuy = {alfa_office_usd_buy} WHERE name = 'ALFA';"""
-            F"""UPDATE office_noncash_currency SET usdsell = {alfa_office_usd_sell} WHERE name = 'ALFA';"""
-            F"""UPDATE office_noncash_currency SET usdbuy = {sovcom_office_noncash_usd_buy} WHERE name = 'SOVCOM';"""
-            F"""UPDATE office_noncash_currency SET usdsell = {sovcom_office_noncash_usd_sell} WHERE name = 'SOVCOM';"""
-            F"""UPDATE office_noncash_currency SET usdbuy = {gazprom_office_noncash_usd_buy} WHERE name = 'GAZPROM';"""
-            F"""UPDATE office_noncash_currency SET usdsell = {gazprom_office_noncash_usd_sell} WHERE name = 'GAZPROM';"""
+            F"""UPDATE office_noncash_currency SET usdbuy = {vtb_office_noncash_usd_buy} WHERE name = 'ВТБ';"""
+            F"""UPDATE office_noncash_currency SET usdsell = {vtb_office_noncash_usd_sell} WHERE name = 'ВТБ';"""
+            F"""UPDATE office_noncash_currency SET usdbuy = {alfa_office_usd_buy} WHERE name = 'Альфа-банк';"""
+            F"""UPDATE office_noncash_currency SET usdsell = {alfa_office_usd_sell} WHERE name = 'Альфа-банк';"""
+            F"""UPDATE office_noncash_currency SET usdbuy = {sovcom_office_noncash_usd_buy} WHERE name = 'Совкомбанк';"""
+            F"""UPDATE office_noncash_currency SET usdsell = {sovcom_office_noncash_usd_sell} WHERE name = 'Совкомбанк';"""
+            F"""UPDATE office_noncash_currency SET usdbuy = {gazprom_office_noncash_usd_buy} WHERE name = 'Газпромбанк';"""
+            F"""UPDATE office_noncash_currency SET usdsell = {gazprom_office_noncash_usd_sell} WHERE name = 'Газпромбанк';"""
         )
         print("[INFO] Data was succefully updated")
 
